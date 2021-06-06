@@ -2,7 +2,7 @@ import React from "react";
 import axios from "axios";
 import { useSelector } from "react-redux";
 
-const url = "http://localhost:8000/";
+const url = "https://leadsapp-backend.herokuapp.com/";
 
 export const fetchLeads = (token) => {
   let config = {
