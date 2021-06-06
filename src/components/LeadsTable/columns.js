@@ -35,10 +35,4 @@ export const COLUMNS = [
       return "Edit";
     },
   },
-  {
-    Header: "Delete",
-    Cell: () => {
-      return "Delete";
-    },
-  },
 ];

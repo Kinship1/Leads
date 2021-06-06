@@ -17,3 +17,11 @@ export const register = (credentails) => async (dispatch) => {
     dispatch({ type: "ERROR" });
   }
 };
+
+export const logout = () => async (dispatch) => {
+  try {
+    dispatch({ type: "LOGOUT", payload: null });
+  } catch (error) {
+    dispatch({ type: "ERROR" });
+  }
+};

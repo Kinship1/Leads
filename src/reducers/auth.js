@@ -9,8 +9,7 @@ export default (auth = initialState, action) => {
       return { username: action.payload.username, token: action.payload.token };
     }
     case "LOGOUT":
-      console.log(action.payload);
-      return auth;
+      return { username: "", token: "" };
     case "REGISTER":
       alert(action.payload.message);
       return { username: action.payload.username, token: action.payload.token };
